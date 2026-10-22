@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/funzmart/static/css/main.135c28f4.css",
+    "main.js": "/funzmart/static/js/main.884c4b03.js",
+    "static/js/453.8e6d73e6.chunk.js": "/funzmart/static/js/453.8e6d73e6.chunk.js",
+    "index.html": "/funzmart/index.html",
+    "main.135c28f4.css.map": "/funzmart/static/css/main.135c28f4.css.map",
+    "main.884c4b03.js.map": "/funzmart/static/js/main.884c4b03.js.map",
+    "453.8e6d73e6.chunk.js.map": "/funzmart/static/js/453.8e6d73e6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.135c28f4.css",
+    "static/js/main.884c4b03.js"
+  ]
+}
