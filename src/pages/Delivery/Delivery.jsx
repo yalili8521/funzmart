@@ -33,7 +33,7 @@ export default function Delivery() {
             <h5 class="question-heading">
               Can't Find the Answer to&nbsp;Your Question?
             </h5>
-            <a href="/contacts" class="button ">
+            <a href="#/contacts" class="button ">
               Contact Us
             </a>
           </div>

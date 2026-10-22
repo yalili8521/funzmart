@@ -1,5 +1,7 @@
 # Funzmart
 
+Live demo: https://yalili8521.github.io/funzmart/
+
 A toy store front end built in React during a full-stack bootcamp (fall 2025). No backend: the
 catalog is a local data file, and the cart and favorites persist in the browser.
 
@@ -28,4 +30,4 @@ npm install
 npm start
 ```
 
-Opens at http://localhost:3000.
+Opens at http://localhost:3000. `npm run deploy` builds and publishes to GitHub Pages.
