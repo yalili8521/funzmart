@@ -1,0 +1,155 @@
+.catalog-page {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Main Content Styles */
+.catalog-main {
+  width: 100%;
+}
+
+.catalog-header {
+  margin-bottom: 30px;
+}
+
+.catalog-header h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Category Filter Bar */
+.catalog-filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-bottom: 25px;
+  background: white;
+  border-radius: 12px;
+  position: relative;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.catalog-filter-bar:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  height: 3px;
+  background-color: #a5c926;
+}
+
+.category-display h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0;
+}
+
+.category-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.cat-btn {
+  border: 2px solid transparent;
+  padding: 12px 24px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  background-color: white;
+}
+
+.cat-btn:hover {
+  background: #e9ecef;
+  color: #a5c926;
+}
+
+.cat-btn.active {
+  background: linear-gradient(135deg, #a5c926 0%, #a5c926 100%);
+  color: white;
+  border-color: #a5c926;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.no-products {
+  text-align: center;
+  padding: 60px 20px;
+  color: #999;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .catalog-filter-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .category-buttons {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .cat-btn {
+    flex: 1;
+    min-width: 140px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .products-grid {
+    grid-template-columns: repeat(auto-fill, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog-page {
+    padding: 20px 15px;
+  }
+
+  .catalog-header h1 {
+    font-size: 2rem;
+  }
+
+  .catalog-filter-bar {
+    padding: 15px;
+  }
+
+  .category-display h2 {
+    font-size: 1.5rem;
+  }
+
+  .category-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cat-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
